@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <div class="header-links">
+            <a href="https://mail.google.com" target="_blank" rel="noopener" class="header-link">Gmail</a>
+            <a href="https://www.google.com/imghp" target="_blank" rel="noopener" class="header-link">Imágenes</a>
+            
+            <!-- Botón de cuadrícula de Google Apps -->
+            <button class="icon-btn" id="appsMenuBtn" title="Google Apps" aria-label="Google Apps">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#5f6368">
+                    <path d="M6 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM6 14c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM6 20c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+                </svg>
+            </button>
+
+            <!-- Menú Desplegable de Apps -->
+            <div class="apps-menu" id="appsMenu">
+                <a href="https://www.google.com" class="app-item">
+                    <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.79l7.97-6.2z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                    <span>Búsqueda</span>
+                </a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="app-item">
+                    <svg viewBox="0 0 48 48"><path fill="#4CAF50" d="M24 4C14.06 4 6 12.06 6 22c0 13.67 15.7 21.32 17.06 21.98.3.15.63.22.94.22s.64-.07.94-.22C26.3 43.32 42 35.67 42 22 42 12.06 33.94 4 24 4z"/><circle fill="#FFF" cx="24" cy="22" r="8"/><circle fill="#1976D2" cx="24" cy="22" r="5"/></svg>
+                    <span>Maps</span>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" class="app-item">
+                    <svg viewBox="0 0 48 48"><path fill="#FF0000" d="M43.2 11.8s-.4-3-1.7-4.3c-1.7-1.7-3.5-1.8-4.4-1.9C31 5.2 24 5.2 24 5.2s-7 0-13.1.4c-.9.1-2.7.2-4.4 1.9-1.3 1.3-1.7 4.3-1.7 4.3S4.4 15.3 4.4 18.7v3.2c0 3.4.4 6.9.4 6.9s.4 3 1.7 4.3c1.7 1.7 3.9 1.6 4.9 1.8 3.6.3 12.6.4 12.6.4s7 0 13.1-.4c.9-.1 2.7-.2 4.4-1.9 1.3-1.3 1.7-4.3 1.7-4.3s.4-3.5.4-6.9v-3.2c0-3.4-.4-6.9-.4-6.9z"/><polygon fill="#FFF" points="19.2,14.7 19.2,27.3 30.8,21"/></svg>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://mail.google.com" target="_blank" rel="noopener" class="app-item">
+                    <svg viewBox="0 0 48 48"><path fill="#4285F4" d="M45 16.2v21.6c0 2.3-1.9 4.2-4.2 4.2H36V22.2L45 16.2z"/><path fill="#34A853" d="M12 42H7.2C4.9 42 3 40.1 3 37.8V16.2l9 6v19.8z"/><path fill="#EA4335" d="M36 10.2v12L24 14.4 12 22.2v-12l12-7.8 12 7.8z"/><path fill="#FBBC05" d="M3 16.2L12 22.2V10.2L3 4.2z"/><path fill="#C5221F" d="M45 16.2l-9 6V10.2l9-6z"/></svg>
+                    <span>Gmail</span>
+                </a>
+                <a href="https://drive.google.com" target="_blank" rel="noopener" class="app-item">
+                    <svg viewBox="0 0 48 48"><path fill="#FFC107" d="M17 6.5L3.8 29.5l7.5 13 13.2-23z"/><path fill="#1E88E5" d="M31 6.5H17l13.2 23h14z"/><path fill="#4CAF50" d="M44.2 29.5H18l-6.7 13h26.2z"/></svg>
+                    <span>Drive</span>
+                </a>
+                <a href="https://calendar.google.com" target="_blank" rel="noopener" class="app-item">
+                    <svg viewBox="0 0 48 48"><path fill="#1976D2" d="M38 42H10c-2.2 0-4-1.8-4-4V12c0-2.2 1.8-4 4-4h28c2.2 0 4 1.8 4 4v26c0 2.2-1.8 4-4 4z"/><path fill="#FFF" d="M10 16h28v22H10z"/><text x="24" y="32" font-size="16" font-weight="bold" fill="#1976D2" text-anchor="middle">31</text></svg>
+                    <span>Calendar</span>
+                </a>
+            </div>
+
+            <!-- Botón de Perfil con resplandor -->
+            <button class="profile-btn" id="profileBtn" title="Cuenta de Google" aria-label="Cuenta de Google">
+                G
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Logotipo Oficial Google con toques neón -->
+        <div class="logo-container">
+            <h1 class="google-logo" id="googleLogo" title="Google">
+                <span class="letter g-blue-1">G</span>
+                <span class="letter g-red-1">o</span>
+                <span class="letter g-yellow">o</span>
+                <span class="letter g-blue-2">g</span>
+                <span class="letter g-green">l</span>
+                <span class="letter g-red-2">e</span>
+            </h1>
+        </div>
+
+        <!-- Barra de búsqueda con resplandor reactivo -->
+        <div class="search-wrapper">
+            <form id="searchForm" class="search-box" role="search">
+                <div class="search-icon-left" aria-hidden="true">
+                    <svg focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </div>
+
+                <input type="text" 
+                       id="searchInput" 
+                       class="search-input" 
+                       title="Buscar" 
+                       autocomplete="off" 
+                       spellcheck="false" 
+                       aria-label="Buscar"
+                       placeholder="">
+
+                <div class="search-tools">
+                    <!-- Botón borrar búsqueda -->
+                    <button type="button" class="tool-btn clear-btn" id="clearBtn" title="Borrar" aria-label="Borrar texto">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                        </svg>
+                    </button>
+
+                    <!-- Icono Micrófono Google -->
+                    <button type="button" class="tool-btn mic" id="micBtn" title="Búsqueda por voz" aria-label="Búsqueda por voz">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"/>
+                            <path fill="#34a853" d="m11 18.08h2v3.92h-2z"/>
+                            <path fill="#fbbc05" d="m7.05 16.97-1.41-1.41c-1.02-1.03-1.64-2.45-1.64-4.01h2c0 1.01.41 1.93 1.08 2.6l1.97-1.97v4.79z"/>
+                            <path fill="#ea4335" d="m12 17c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                        </svg>
+                    </button>
+
+                    <!-- Icono Google Lens -->
+                    <button type="button" class="tool-btn lens" id="lensBtn" title="Búsqueda visual por Google Lens" aria-label="Buscar por imagen">
+                        <svg width="24" height="24" viewBox="0 0 192 192">
+                            <path fill="#4285F4" d="M51 28H28C28 28 28 51 28 51V69H51V28Z"/>
+                            <path fill="#EA4335" d="M141 28H164V69H141V51C141 51 141 28 141 28Z"/>
+                            <path fill="#34A853" d="M51 164H28V123H51V141C51 141 51 164 51 164Z"/>
+                            <path fill="#4285F4" d="M96 59C75.565 59 59 75.565 59 96C59 116.435 75.565 133 96 133C116.435 133 133 116.435 133 96C133 75.565 116.435 59 96 59Z"/>
+                            <path fill="#FBBC05" d="M164 123V164H141V141C141 141 141 123 141 123H164Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+            <div class="suggestions-dropdown" id="suggestionsBox">
+            </div>
+        </div>
+
+        <!-- Botones de Acción -->
+        <div class="buttons-group">
+            <button class="g-button" id="searchSubmitBtn">Buscar con Google</button>
+            <button class="g-button" id="luckyBtn">Voy a tener suerte</button>
+        </div>
+
+        <!-- Lenguajes -->
+        <div class="languages-text">
+            Ofrecido por Google en: 
+            <a href="javascript:void(0)" onclick="switchLanguage('English')">English</a>
+            <a href="javascript:void(0)" onclick="switchLanguage('Español (Latinoamérica)')">Español (Latinoamérica)</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-location">
+            <span class="location-dot"></span>
+            <span id="userLocation">México</span>
+        </div>
+        <div class="footer-links-row">
+            <div class="footer-col">
+                <a href="https://about.google/" target="_blank" rel="noopener">Sobre Google</a>
+                <a href="https://ads.google.com" target="_blank" rel="noopener">Publicidad</a>
+                <a href="https://www.google.com/services/" target="_blank" rel="noopener">Negocios</a>
+                <a href="https://www.google.com/search/howsearchworks/" target="_blank" rel="noopener">Cómo funciona la Búsqueda</a>
+            </div>
+            <div class="footer-col">
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacidad</a>
+                <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Condiciones</a>
+                <a href="javascript:void(0)" id="settingsBtn">Preferencias</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALES CON EFECTOS -->
+    <!--  (Búsqueda por voz) -->
+    <div class="overlay-modal" id="micModal">
+        <div class="modal-card">
+            <button class="close-modal-btn" onclick="closeModals()">✕</button>
+            <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 8px;">Escuchando...</h3>
+            <p style="color: #5f6368; font-size: 14px;">Habla ahora para buscar con Google</p>
+            <div class="voice-pulse">
+                <svg width="36" height="36" viewBox="0 0 24 24">
+                    <path fill="#ea4335" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"/>
+                    <path fill="#ea4335" d="m11 18.08h2v3.92h-2z"/>
+                    <path fill="#ea4335" d="m7.05 16.97-1.41-1.41c-1.02-1.03-1.64-2.45-1.64-4.01h2c0 1.01.41 1.93 1.08 2.6l1.97-1.97v4.79z"/>
+                    <path fill="#ea4335" d="m12 17c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                </svg>
+            </div>
+            <p style="font-size: 13px; color: #70757a;">Presiona cualquier lugar para cerrar</p>
+        </div>
+    </div>
+
+    <!--(Búsqueda por imagen) -->
+    <div class="overlay-modal" id="lensModal">
+        <div class="modal-card">
+            <button class="close-modal-btn" onclick="closeModals()">✕</button>
+            <h3 style="font-size: 20px; font-weight: 500; margin-bottom: 8px;">Buscar cualquier imagen con Google Lens</h3>
+            <p style="color: #5f6368; font-size: 14px;">Arrastra una imagen aquí o sube un archivo</p>
+            <div class="lens-dropzone" id="lensDropzone">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#4285f4" style="margin-bottom: 8px;">
+                    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                </svg>
+                <div style="font-size: 14px; font-weight: 500; color: #1a73e8;">Arrastra una imagen o explora tu equipo</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toastBox">Notificación</div>
+
+</body>
+<script src="script.js"></script>
+</html>
